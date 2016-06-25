@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--网页编码-->
+    <meta charset="UTF-8">
+    <!--浏览器的自适应-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--style样式表-->
+    <!--初始化ul/li/ol/padding:0;margin:0-->
+    <link type="text/css" rel="stylesheet" href="style/normalize.css">
+    <!--引入bootstrap 媒介查询-->
+    <link type="text/css" rel="stylesheet" href="style/bootstrap.min.css">
+    <!--我们自定义的样式表-->
+    <link type="text/css" rel="stylesheet" href="style/base.css">
+</head>
+<body>
+<nav class="navbar navbar-default course">
+    <div class="container-fluid container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo" id="logo">
+                <img src="images/pr.jpg" alt="pr" title="pr">
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left title">
+                <li><h2>欢迎进入PR学习</h2></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <button type="button" class="btn btn-info" onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-chevron-left"></span>返回</button>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="pr" class="container">
+    <div class="row">
+        <div class="col-md-9 left">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">介绍</h3>
+                            </div>
+                            <div class="panel-body">
+                                <img src="http://pic.qbaobei.com/Uploads/Picture/2016-02-18/56c527b5a1f74.jpg" class="img-responsive img-rounded" alt="年糕的由来和意义">
+                                <p class="info">年糕的由来一
+                                    关于春节年糕的来历，有一个很古老的传说。在远古时期有一种怪兽称为“年”，一年四季都生活在深山老林里，饿了就捕捉其他兽类充饥。可到了严冬季节，兽类大多都躲藏起来休眼了。“年”饿得不得已时，就下山伤害百姓，攫夺人充当食物，使百姓不堪其苦。
+                                </p>
+                                <a href="pr-detail--01.html" type="button" class="btn btn-info pull-right">阅读更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">基础知识</h3>
+                            </div>
+                            <div class="panel-body">
+                                这是一个基本的面板
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">进阶冲刺</h3>
+                            </div>
+                            <div class="panel-body">
+                                这是一个基本的面板
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">下载地址</h3>
+                            </div>
+                            <div class="panel-body">
+                                这是一个基本的面板
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="col-md-3 right">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">走向大神</h3>
+                </div>
+                <div class="panel-body">
+                    这是一个基本的面板
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<footer class="footer">
+    <div id="top" data-toggle="tooltip" data-placement="top" title="" data-original-title="回到顶部" style="display: block;">
+        <a href="javascript:;">
+        </a>
+    </div>
+</footer>
+
+<!--javascript-->
+<!--原生javascript抽象出来的一个工具库-->
+<script type="text/javascript" src="javascript/jquery.min.js"></script>
+<!--引入bootstrap依赖的javascript-->
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+<!--自定义的javascript-->
+<script type="text/javascript" src="javascript/base.js"></script>
+</body>
+</html>
