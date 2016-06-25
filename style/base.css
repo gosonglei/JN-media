@@ -1,44 +1,87 @@
 /*背景色*/
-body{
-    background: url("../images/main-bg.jpg") center no-repeat;
+body {
+    background: url("../images/main-bg.jpg") repeat;
 }
+body.detail-02{
+    background: url("../images/item_bg.png") repeat;
+}
+
 /*导航栏*/
-.nav li a{
+.nav li a {
     cursor: pointer;
 }
+
 /*轮番图*/
-#main .panel-item{
+#main .panel-item {
     margin-top: 20px;
 }
+
 /*课程列表*/
-#main .panel-item .well{
+#main .panel-item .well {
     text-align: center;
 }
 
+#author .table {
+    width: 338px;
+    margin-top: 50px;
+    float: left;
+}
+
+#author table tr td:first-child {
+    text-align: right;
+}
+
+#author table tr td:last-child {
+    text-align: left;
+}
+
+#author .table > tbody > tr > td, #author .table > tbody > tr > th, #author .table > tfoot > tr > td, #author .table > tfoot > tr > th, #author .table > thead > tr > td, #author .table > thead > tr > th {
+    border-top: none;
+}
+
+#author .avatar {
+    height: 240px;
+    width: 200px;
+    margin-left: 30px;
+    float: left;
+}
+
+#author .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+
+}
+
 /*pr课程页面*/
-.course.navbar{
+.course.navbar {
     height: 100px;
 }
-.course .nav{
+
+.course .nav {
     height: 100px;
     line-height: 100px;
 }
 
-.course #logo{
+.course #logo {
     width: 80px;
     height: 80px;
     margin-top: 10px;
 }
-.course #logo img{
+
+.course #logo img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
 }
-.course .title h2{
+
+.course .title h2 {
     height: 70px;
     line-height: 70px;
     margin: 30px 0px 0 20px;
 }
+
 #pr .panel:hover {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     margin-top: -3px;
@@ -47,12 +90,19 @@ body{
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+#pr .panel-heading{
+    background: #fff;
+}
 #pr .left .panel-body{
-    height: 420px;
+    padding:0;
 }
-#pr .left .panel-body img{
-    margin-bottom: 10px;
+
+#pr .left .panel-body img {
+    width: 100%;
+    height: 100%;
 }
+
 #pr .info {
     font-size: 14px;
     color: rgb(153, 153, 153);
@@ -61,8 +111,107 @@ body{
     width: 100%;
     overflow: hidden;
 }
-#pr .right .panel-body{
+
+/*右侧的文章列表*/
+#pr #right_site_articles .panel-body {
     min-height: 500px;
+}
+
+#pr #right_site_articles a {
+    color: #16a085;
+}
+
+#right_site_articles .side_article_list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#right_site_articles li {
+    list-style-type: none;
+}
+
+.side_article_list_item {
+    list-style-type: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    padding-left: 0;
+    border-bottom: 1px dashed #ccc;
+}
+/*pr 介绍版本*/
+.introduce .detail-list {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
+    background: url("../images/item_bg.png") repeat;
+}
+.introduce .detail-textNub {
+    display: block;
+    height: 5px;
+    margin-bottom: 0;
+    position: relative;
+}
+.introduce .detail-textNub .textNub {
+    position: absolute;
+    top: -28px;
+    display: inline-block;
+    width: 45px;
+    height: 68px;
+    background: url(../images/vipic.png) 0px 0px no-repeat;
+    text-align: center;
+    line-height: 68px;
+    color: #fff;
+    font-size: 22px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.introduce .detail-box {
+    line-height: 30px;
+    font-size: 14px;
+}
+.introduce .detail-box h2 {
+    height: 30px;
+    line-height: 30px;
+    color: #fa4e68;
+    font-size: 20px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+/*基础知识板块*/
+/* Custom Styles */
+.base ul.nav-tabs{
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+.base ul.nav-tabs li{
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+.base ul.nav-tabs li:first-child{
+    border-top: none;
+}
+.base ul.nav-tabs li a{
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+.base ul.nav-tabs li.active a,.base ul.nav-tabs li.active a:hover{
+    color: #fff;
+    background: #0088cc;
+    border: 1px solid #0088cc;
+}
+.base ul.nav-tabs li:first-child a{
+    border-radius: 4px 4px 0 0;
+}
+.base ul.nav-tabs li:last-child a{
+    border-radius: 0 0 4px 4px;
+}
+.base ul.nav-tabs.affix{
+    top: 30px; /* Set the top position of pinned element */
 }
 /*返回顶部*/
 #top {
@@ -78,4 +227,18 @@ body{
     text-indent: 100%;
     background: url("../images/toTop.png") no-repeat 0px 0px;
     z-index: 99999;
+}
+
+/*清除浮动*/
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: ""
+}
+
+.clearfix:after {
+    clear: both
 }
